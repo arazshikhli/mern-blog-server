@@ -26,8 +26,8 @@ async function start(){
     try {
         await mongoose.connect(
             
-            // `mongodb+srv://${USER}:${PASS}@cluster0.wrifj3b.mongodb.net/${APP}?retryWrites=true&w=majority`
-            'mongodb://localhost:27017'
+             `mongodb+srv://${USER}:${PASS}@cluster0.wrifj3b.mongodb.net/${APP}?retryWrites=true&w=majority`
+            // 'mongodb://localhost:27017'
             )
         app.listen(PORT,()=>console.log(`Server started at PORT: ${PORT}`))
     } catch (error) {
